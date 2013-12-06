@@ -28,7 +28,7 @@ public class JCatalogTest extends MainDriver{
 		driver.findElement(By.name("loginForm:_id24")).click();
 		}
 	 
-	@Test
+	@Test(priority=0)
 	public void TestcategoryOne(){
 		try{
 		openBrowser();
@@ -40,34 +40,34 @@ public class JCatalogTest extends MainDriver{
 		}
 	}
 	
-	@Test
+	@Test(priority=1)
 	public void Testcategorytwo(){
 		
 		Category.categoryTwo();
 		}
 	
-	@Test
+	@Test(priority=2)
 	public void Testcategorythree(){
 		
 		Category.categoryThree();
 		
 	}
 	
-	@Test
+	@Test(priority=3)
 	public void Testcategoryfour(){
 		
 		Category.categoryFour();
 		
 		}
 	
-	@Test
+	@Test(priority=5)
 	public void TestproductList(){
 		
 		NewProduct.ProductList();
 		
 	}
 
-	@Test
+	@Test(priority=4)
 	public void TestnewProduct(){
 		try{
 		
@@ -80,14 +80,14 @@ public class JCatalogTest extends MainDriver{
 		}
 	}
 	
-	@Test
+	@Test(priority=6)
 	public void Testcontactus(){
 		
 		ContactUs.contactUs();
 		
 	}
 	
-	@Test
+	@Test(priority=7)
 	public void Testplaceorder(){
 		
 		PlaceOrder.placeOrder();

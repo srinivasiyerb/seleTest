@@ -4,7 +4,7 @@
     <property name="src.dir" value="${basedir}/src"/>
 	<property name="report.dir" value="${basedir}/report" />
 	
-    <property name="browser" value="C:\Program Files (x86)\Mozilla Firefox\firefox"/> 
+   
     <target name="setClassPath">
         <path id="classpath_jars">
             <pathelement path="${basedir}/" />
